@@ -6,7 +6,7 @@ class profile::ssh_server {
                 ensure => 'running',
                 enable => 'true',
         }
-        ssh_authorized_keys { 'root@master.puppet.vm001':
+        ssh_authorized_keys { 'root@vm.master.puppet001':
                 ensure => present,
                 user => 'root',
                 type => 'ssh-rsa',
